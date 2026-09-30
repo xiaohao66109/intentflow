@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "评估标题",
+      "minLength": 1
+    },
+    "effect_gap": {
+      "type": "string",
+      "title": "效果差距与证据充分性",
+      "minLength": 1
+    },
+    "new_problem": {
+      "type": "string",
+      "title": "新问题候选（可留空）"
+    },
+    "recommended_action": {
+      "type": "string",
+      "title": "人工确认下一步",
+      "enum": [
+        "CLOSE",
+        "OBSERVE",
+        "ADJUST",
+        "ROLLBACK"
+      ]
+    },
+    "rationale": {
+      "type": "string",
+      "title": "决策依据",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "title",
+    "effect_gap",
+    "new_problem",
+    "recommended_action",
+    "rationale"
+  ]
+}

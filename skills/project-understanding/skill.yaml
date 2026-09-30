@@ -1,0 +1,16 @@
+{
+  "id": "project-understanding",
+  "name": "项目理解",
+  "version": "1.0.0",
+  "description": "阅读项目背景、目录、README 和原始材料。区分已知信息与推断；为每项结论注明来源。不要把猜测当作需求。",
+  "inputs": [
+    "project_context",
+    "sources"
+  ],
+  "outputs": [
+    "Context"
+  ],
+  "requires_llm": false,
+  "human_confirmation_required": true,
+  "requires_sources": []
+}

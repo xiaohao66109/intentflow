@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "project_context": {
+      "type": "object"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "required": [
+    "project_context",
+    "sources"
+  ],
+  "additionalProperties": false
+}

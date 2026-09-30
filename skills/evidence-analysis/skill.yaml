@@ -1,0 +1,19 @@
+{
+  "id": "evidence-analysis",
+  "name": "现场证据分析",
+  "version": "1.0.0",
+  "description": "先核对原始记录，再描述可观察的差异。区分症状、原因假设和已验证原因；避免从单条日志直接确定修复方案。",
+  "inputs": [
+    "project_context",
+    "sources"
+  ],
+  "outputs": [
+    "Problem"
+  ],
+  "requires_llm": false,
+  "human_confirmation_required": true,
+  "requires_sources": [
+    "Evidence",
+    "RuntimeEvidence"
+  ]
+}

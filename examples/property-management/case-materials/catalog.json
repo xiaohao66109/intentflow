@@ -1,0 +1,67 @@
+[
+  {
+    "file": "01-project-brief.md",
+    "title": "项目背景与本轮目标",
+    "type": "Document"
+  },
+  {
+    "file": "02-roles-and-journey.md",
+    "title": "角色职责与用户旅程",
+    "type": "Document"
+  },
+  {
+    "file": "03-resident-interview.md",
+    "title": "居民访谈记录",
+    "type": "Document"
+  },
+  {
+    "file": "04-staff-interview.md",
+    "title": "客服与维修人员访谈",
+    "type": "Document"
+  },
+  {
+    "file": "05-business-rules.md",
+    "title": "业务规则与状态约定",
+    "type": "Document"
+  },
+  {
+    "file": "06-support-log.md",
+    "title": "问题单与复现步骤",
+    "type": "Document"
+  },
+  {
+    "file": "07-runtime-log.md",
+    "title": "模拟运行日志",
+    "type": "Document"
+  },
+  {
+    "file": "08-priority-and-conflicts.md",
+    "title": "需求分歧与优先级",
+    "type": "Document"
+  },
+  {
+    "file": "09-design-map.md",
+    "title": "模块职责与修改边界",
+    "type": "Document"
+  },
+  {
+    "file": "10-acceptance-plan.md",
+    "title": "验收清单与测试映射",
+    "type": "Document"
+  },
+  {
+    "file": "11-observation-plan.md",
+    "title": "效果评估口径与后续观察",
+    "type": "Document"
+  },
+  {
+    "file": "12-next-iteration.md",
+    "title": "下一轮变更请求",
+    "type": "Document"
+  },
+  {
+    "file": "work-orders.json",
+    "title": "12 条模拟工单与字段样本",
+    "type": "Business Data"
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "stakeholders": {
+      "type": "array",
+      "title": "利益相关者",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "system_boundary": {
+      "type": "string",
+      "title": "系统边界",
+      "minLength": 1
+    },
+    "core_modules": {
+      "type": "array", "title": "核心模块", "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "repository_structure": {
+      "type": "array", "title": "仓库结构", "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "business_objects": {
+      "type": "array",
+      "title": "核心业务对象",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "workflow": {
+      "type": "string",
+      "title": "当前流程",
+      "minLength": 1
+    },
+    "constraints": {
+      "type": "array",
+      "title": "已知约束",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "unknown_questions": {
+      "type": "array",
+      "title": "待确认问题",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "stakeholders",
+    "system_boundary",
+    "core_modules",
+    "repository_structure",
+    "business_objects",
+    "workflow",
+    "constraints",
+    "unknown_questions"
+  ]
+}

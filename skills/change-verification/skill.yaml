@@ -1,0 +1,18 @@
+{
+  "id": "change-verification",
+  "name": "变更验证方法",
+  "version": "1.0.0",
+  "description": "审阅合同、baseline/final 和差异。此 Skill 只形成检查计划；PASS/REJECT 必须由确定性引擎计算，任何人或模型不得覆盖。",
+  "inputs": [
+    "project_context",
+    "sources"
+  ],
+  "outputs": [
+    "VerificationPlan"
+  ],
+  "requires_llm": false,
+  "human_confirmation_required": true,
+  "requires_sources": [
+    "EngineeringIntent"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "intent-design",
+  "name": "工程意图设计",
+  "version": "1.0.0",
+  "description": "左侧查看规格，右侧制定合同。逐项确认保护行为与不变量如何由测试覆盖。测试在 final commit 副本执行；参数使用 JSON 数组，Python 可用 {python}。不得让模型自行扩大范围。",
+  "inputs": [
+    "project_context",
+    "sources"
+  ],
+  "outputs": [
+    "EngineeringIntent"
+  ],
+  "requires_llm": false,
+  "human_confirmation_required": true,
+  "requires_sources": [
+    "Specification"
+  ]
+}

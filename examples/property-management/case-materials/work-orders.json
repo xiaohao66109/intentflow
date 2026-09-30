@@ -1,0 +1,133 @@
+[
+  {
+    "id": "QH-001",
+    "owner": "resident-a",
+    "title": "厨房漏水",
+    "location": "1 栋模拟住户",
+    "status": "assigned",
+    "assignee": "worker-a",
+    "result": "",
+    "history": [],
+    "expected_contact": 600
+  },
+  {
+    "id": "QH-002",
+    "owner": "resident-b",
+    "title": "楼道灯故障",
+    "location": "2 栋模拟住户",
+    "status": "processing",
+    "assignee": "worker-a",
+    "result": "",
+    "history": [],
+    "expected_contact": 615
+  },
+  {
+    "id": "QH-003",
+    "owner": "resident-a",
+    "title": "门锁损坏",
+    "location": "3 栋模拟住户",
+    "status": "assigned",
+    "assignee": "worker-a",
+    "result": "",
+    "history": [],
+    "expected_contact": 630
+  },
+  {
+    "id": "QH-004",
+    "owner": "resident-b",
+    "title": "厨房漏水",
+    "location": "1 栋模拟住户",
+    "status": "processing",
+    "assignee": "worker-a",
+    "result": "",
+    "history": [],
+    "expected_contact": 645
+  },
+  {
+    "id": "QH-005",
+    "owner": "resident-a",
+    "title": "楼道灯故障",
+    "location": "2 栋模拟住户",
+    "status": "assigned",
+    "assignee": "worker-a",
+    "result": "",
+    "history": [],
+    "expected_contact": 660
+  },
+  {
+    "id": "QH-006",
+    "owner": "resident-b",
+    "title": "门锁损坏",
+    "location": "3 栋模拟住户",
+    "status": "processing",
+    "assignee": "worker-a",
+    "result": "",
+    "history": [],
+    "expected_contact": 675
+  },
+  {
+    "id": "QH-007",
+    "owner": "resident-a",
+    "title": "厨房漏水",
+    "location": "1 栋模拟住户",
+    "status": "assigned",
+    "assignee": "worker-a",
+    "result": "",
+    "history": [],
+    "expected_contact": null
+  },
+  {
+    "id": "QH-008",
+    "owner": "resident-b",
+    "title": "楼道灯故障",
+    "location": "2 栋模拟住户",
+    "status": "processing",
+    "assignee": "worker-a",
+    "result": "",
+    "history": [],
+    "expected_contact": null
+  },
+  {
+    "id": "QH-009",
+    "owner": "resident-a",
+    "title": "门锁损坏",
+    "location": "3 栋模拟住户",
+    "status": "assigned",
+    "assignee": "worker-a",
+    "result": "",
+    "history": []
+  },
+  {
+    "id": "QH-010",
+    "owner": "resident-b",
+    "title": "厨房漏水",
+    "location": "1 栋模拟住户",
+    "status": "completed",
+    "assignee": "worker-a",
+    "result": "已处理",
+    "history": [],
+    "expected_contact": 735
+  },
+  {
+    "id": "QH-011",
+    "owner": "resident-a",
+    "title": "楼道灯故障",
+    "location": "2 栋模拟住户",
+    "status": "closed",
+    "assignee": "worker-a",
+    "result": "已处理",
+    "history": [],
+    "expected_contact": 750
+  },
+  {
+    "id": "QH-012",
+    "owner": "resident-b",
+    "title": "门锁损坏",
+    "location": "3 栋模拟住户",
+    "status": "cancelled",
+    "assignee": "worker-a",
+    "result": "已处理",
+    "history": [],
+    "expected_contact": 765
+  }
+]

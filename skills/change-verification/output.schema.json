@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "检查计划标题",
+      "minLength": 1
+    },
+    "scope_checks": {
+      "type": "array",
+      "title": "范围检查",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "preservation_checks": {
+      "type": "array",
+      "title": "回归测试与保护行为对应",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "invariant_checks": {
+      "type": "array",
+      "title": "验收测试与不变量对应",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "traceability_checks": {
+      "type": "array",
+      "title": "追溯检查",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "title",
+    "scope_checks",
+    "preservation_checks",
+    "invariant_checks",
+    "traceability_checks"
+  ]
+}

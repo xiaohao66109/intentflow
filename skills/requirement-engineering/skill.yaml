@@ -1,0 +1,18 @@
+{
+  "id": "requirement-engineering",
+  "name": "需求工程",
+  "version": "1.0.0",
+  "description": "从已确认问题出发。将需求写成可检验的行为，避免过早指定实现。明确变更价值与成功标准，GO 提案才生成正式规格。",
+  "inputs": [
+    "project_context",
+    "sources"
+  ],
+  "outputs": [
+    "Specification"
+  ],
+  "requires_llm": false,
+  "human_confirmation_required": true,
+  "requires_sources": [
+    "Problem"
+  ]
+}

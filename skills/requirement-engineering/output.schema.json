@@ -1,0 +1,86 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "规格标题",
+      "minLength": 1
+    },
+    "user_need": {
+      "type": "string",
+      "title": "用户需求",
+      "minLength": 1
+    },
+    "functional_requirements": {
+      "type": "array",
+      "title": "功能需求",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "quality_requirements": {
+      "type": "array",
+      "title": "质量要求",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "business_rules": {
+      "type": "array",
+      "title": "业务规则",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "title": "约束",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "success_criteria": {
+      "type": "array",
+      "title": "成功标准",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "why_change": {
+      "type": "string",
+      "title": "为什么值得变更",
+      "minLength": 1
+    },
+    "decision": {
+      "type": "string",
+      "title": "提案决策",
+      "enum": [
+        "GO",
+        "OBSERVE",
+        "REJECT"
+      ]
+    }
+  },
+  "required": [
+    "title",
+    "user_need",
+    "functional_requirements",
+    "quality_requirements",
+    "business_rules",
+    "constraints",
+    "success_criteria",
+    "why_change",
+    "decision"
+  ]
+}

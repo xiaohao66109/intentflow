@@ -1,0 +1,13 @@
+.venv/
+.intentflow-data/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vitest/
+playwright-report/
+test-results/
+.env
+.env.*
+!.env.example
+*.log

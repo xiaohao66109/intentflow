@@ -1,0 +1,41 @@
+/* Phase three: restrained motion and truthful operation feedback. */
+@keyframes if-home-enter {
+ from {opacity:0;transform:translateY(var(--if-motion-distance))}
+ to {opacity:1;transform:translateY(0)}
+}
+
+@keyframes if-content-enter {
+ from {opacity:0;transform:translateY(6px)}
+ to {opacity:1;transform:translateY(0)}
+}
+
+.if-home-first .home-view {animation:if-home-enter var(--if-motion-enter) var(--if-ease-standard) both}
+.sidebar-toggle,.collapsed-sidebar-actions button,.engineering .eng-nav button {
+ transition:color var(--if-motion-fast) var(--if-ease-standard),background-color var(--if-motion-fast) var(--if-ease-standard),border-color var(--if-motion-fast) var(--if-ease-standard),transform var(--if-motion-fast) var(--if-ease-standard)
+}
+.sidebar-toggle:active,.collapsed-sidebar-actions button:active,.engineering .eng-nav button:active,.el-button:not(.is-disabled):active {transform:translateY(1px)}
+.engineering .eng-section {animation:if-content-enter var(--if-motion-standard) var(--if-ease-standard) both}
+.engineering .eng-card,.engineering .eng-record,.student-verification,.action-context {
+ transition:border-color var(--if-motion-fast) var(--if-ease-standard),background-color var(--if-motion-fast) var(--if-ease-standard),box-shadow var(--if-motion-standard) var(--if-ease-standard),opacity var(--if-motion-standard) var(--if-ease-standard)
+}
+.engineering .eng-feedback,.el-alert,.el-message {
+ transition:opacity var(--if-motion-standard) var(--if-ease-standard),transform var(--if-motion-standard) var(--if-ease-standard)
+}
+.engineering[aria-busy="true"],main[aria-busy="true"] {cursor:progress}
+.el-overlay-dialog,.el-drawer__wrapper {transition-duration:var(--if-motion-standard)!important}
+.el-overlay {transition:opacity var(--if-motion-standard) var(--if-ease-standard)}
+.motion-status {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+@media (prefers-reduced-motion:reduce) {
+ .if-home-first .home-view,.engineering .eng-section {animation:none}
+ .shell > aside,.shell > main,.home-project-card,.home-secondary > button,.home-secondary > details,
+ .sidebar-toggle,.collapsed-sidebar-actions button,.engineering .eng-nav button,.engineering .eng-card,
+ .engineering .eng-record,.student-verification,.action-context,.engineering .eng-feedback,.el-alert,
+ .el-message,.el-overlay,.el-overlay-dialog,.el-drawer__wrapper,.el-button {transition-duration:1ms!important;transition-delay:0ms!important}
+ .home-project-card:hover,.home-project-card:focus-within,.sidebar-toggle:active,.collapsed-sidebar-actions button:active,
+ .engineering .eng-nav button:active,.el-button:not(.is-disabled):active {transform:none}
+}
+
+@media (max-width:700px) {
+ .shell > aside,.shell > main {transition:none}
+}

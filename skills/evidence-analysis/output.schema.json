@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "问题标题",
+      "minLength": 1
+    },
+    "problem_statement": {"type": "string", "title": "问题陈述", "description": "对照下面的实际结果与期望结果，说明两者之间具体缺少了什么。", "minLength": 1},
+    "supporting_evidence": {"type": "array", "title": "支持证据", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "affected_area": {"type": "string", "title": "受影响区域", "minLength": 1},
+    "unknown_questions": {"type": "array", "title": "待确认问题", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "rationale": {"type": "string", "title": "分析依据", "minLength": 1},
+    "observation": {
+      "type": "string",
+      "title": "实际观察到的事实",
+      "description": "只写材料、日志或测试能够直接核对的事实，不先判断原因。",
+      "minLength": 1
+    },
+    "affected_users": {
+      "type": "string",
+      "title": "谁受到影响",
+      "minLength": 1
+    },
+    "current_state": {
+      "type": "string",
+      "title": "实际结果",
+      "description": "说明当前用户实际看到了什么或系统实际返回了什么。",
+      "minLength": 1
+    },
+    "expected_state": {
+      "type": "string",
+      "title": "期望结果及依据",
+      "description": "说明应该发生什么，并注明业务规则、访谈或验收依据。",
+      "minLength": 1
+    },
+    "sufficiency": {
+      "type": "string",
+      "title": "证据是否充分、还缺少什么",
+      "minLength": 1
+    },
+    "impact": {
+      "type": "string",
+      "title": "影响及严重程度",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "title",
+    "problem_statement",
+    "supporting_evidence",
+    "affected_area",
+    "unknown_questions",
+    "rationale",
+    "observation",
+    "affected_users",
+    "current_state",
+    "expected_state",
+    "sufficiency",
+    "impact"
+  ]
+}

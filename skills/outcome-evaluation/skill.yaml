@@ -1,0 +1,19 @@
+{
+  "id": "outcome-evaluation",
+  "name": "效果评估",
+  "version": "1.0.0",
+  "description": "比较 Before、After、现场目标和验证结果。实现通过不代表现场改善。指标计算由 Core 完成；新问题保留候选状态，经下一次人工确认进入新一轮。",
+  "inputs": [
+    "project_context",
+    "sources"
+  ],
+  "outputs": [
+    "EngineeringEvaluation"
+  ],
+  "requires_llm": false,
+  "human_confirmation_required": true,
+  "requires_sources": [
+    "Verification",
+    "RuntimeEvidence"
+  ]
+}

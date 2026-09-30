@@ -1,0 +1,15 @@
+{
+  "dataset_name": "intentflow-examples",
+  "instance_id": "campus-activity-001",
+  "project_name": "Campus activity benchmark",
+  "repo_url": ".",
+  "base_commit": "HEAD",
+  "language": "Python",
+  "task_type": "repository-change",
+  "problem_statement": "Concurrent enrollment can exceed the configured activity capacity.",
+  "setup_command": [],
+  "test_command": ["{python}", "-m", "unittest", "discover", "-s", "tests"],
+  "raw_materials": [
+    {"title": "Observed incident", "type": "Observation", "content": "Capacity was 30 while the exported participant list contained 34 entries."}
+  ]
+}

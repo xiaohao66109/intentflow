@@ -1,0 +1,122 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "意图标题",
+      "minLength": 1
+    },
+    "goal": {
+      "type": "string",
+      "title": "目标",
+      "minLength": 1
+    },
+    "allowed_scope": {
+      "type": "array",
+      "title": "允许路径（逐行 glob）",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "protected_scope": {
+      "type": "array",
+      "title": "保护路径（逐行 glob）",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "protected_behavior": {
+      "type": "array",
+      "title": "必须保持的行为",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "invariants": {
+      "type": "array",
+      "title": "不变量",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "acceptance": {
+      "type": "array",
+      "title": "验收标准",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "acceptance_criteria": {
+      "type": "array", "title": "验收标准", "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "preservation_tests": {
+      "type": "array",
+      "title": "保护行为测试（每行 JSON 参数数组）",
+      "minItems": 1,
+      "items": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "acceptance_tests": {
+      "type": "array",
+      "title": "验收测试（每行 JSON 参数数组）",
+      "minItems": 1,
+      "items": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "invariant_tests": {
+      "type": "array", "title": "不变量测试（每行 JSON 参数数组）", "minItems": 1,
+      "items": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+    },
+    "open_questions": {"type": "array", "title": "待确认问题", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "rationale": {"type": "string", "title": "设计依据", "minLength": 1},
+    "field_target": {
+      "type": "array",
+      "title": "现场指标目标，例如 actual <= 30",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "title",
+    "goal",
+    "allowed_scope",
+    "protected_scope",
+    "protected_behavior",
+    "invariants",
+    "acceptance",
+    "acceptance_criteria",
+    "preservation_tests",
+    "acceptance_tests",
+    "invariant_tests",
+    "open_questions",
+    "rationale",
+    "field_target"
+  ]
+}
